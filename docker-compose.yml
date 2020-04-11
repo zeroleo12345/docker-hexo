@@ -9,7 +9,7 @@ services:
     ports: 
       - "4000:4000"
     volumes:    # 主机路径:docker内部路径
-      - .:/app
-    entrypoint: sleep 3600      # 用于调试
-    # entrypoint: hexo server
+      - ./source/_posts.my:/app/source/_posts
+    # entrypoint: sleep 3600      # 用于调试
+    entrypoint: hexo server
     tty: true
