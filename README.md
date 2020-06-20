@@ -4,4 +4,4 @@
 git submodule add https://github.com/zeroleo12345/hexo-theme-tree.git  themes/tree
 ```
 
-同步到docker-hub, 登录docker-hub去设置构建源代码
+同步到docker-hub, 登录 https://hub.docker.com/ 去设置构建源代码
