@@ -9,6 +9,7 @@ services:
     ports: 
       - "4000:4000"
     volumes:
+      - ./_config.yml:/app/_config.yml
       # - ./source/_posts.my:/app/source/_posts     # 云笔记目录
       - ./source/_posts:/app/source/_posts        # 本地测试目录
     entrypoint: hexo server
