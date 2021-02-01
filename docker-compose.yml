@@ -8,8 +8,9 @@ services:
        dockerfile: ./Dockerfile
     ports: 
       - "4000:4000"
-    volumes:    # 主机路径:docker内部路径
-      - ./source/_posts.my:/app/source/_posts
-    # entrypoint: sleep 3600      # 用于调试
+    volumes:
+      # - ./source/_posts.my:/app/source/_posts     # 云笔记目录
+      - ./source/_posts:/app/source/_posts        # 本地测试目录
     entrypoint: hexo server
+    # entrypoint: sleep 3600      # 用于调试
     tty: true
